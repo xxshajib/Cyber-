@@ -43,10 +43,10 @@ def fex():
 	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	fbbv = str(random.randint(10000000, 66666666))
 	fbrv = str(random.randint(000000000,999999999))
-	density = random.choice(['3.0'])
-	width = random.choice(["1080"])
-	height = random.choice(["1920"])
-	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBBV/172917909;FBCR/null;FBMF/LGE;FBBD/lge;FBPN/com.facebook.orca;FBDV/LML713DL;FBSV/8.1.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+	density = random.choice(['2.0'])
+	width = random.choice(["720"])
+	height = random.choice(["1444"])
+	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/Orca-Android;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBBV/396116327;FBCR/null;FBMF/TECNO;FBBD/lge;FBPN/com.facebook.orca;FBDV/TECNO KI5k;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	return ua
 
 def sex():
@@ -102,7 +102,7 @@ logo = f"""
     ██         ██    ██   ██ ██      ██   ██ 
      ██████    ██    ██████  ███████ ██   ██                                                                                  
 {A}─────────────────────────────────────────────────
-{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.2\n{A}─────────────────────────────────────────────────"""
+{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.3\n{A}─────────────────────────────────────────────────"""
 #________________ KEY ______________#
 os.system('clear');print(logo)
 attemps = 0
