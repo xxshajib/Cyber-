@@ -43,9 +43,9 @@ def fex():
 	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	fbbv = str(random.randint(10000000, 66666666))
 	fbrv = str(random.randint(000000000,999999999))
-	density = random.choice(['2.0'])
-	width = random.choice(["720"])
-	height = random.choice(["1444"])
+	density = random.choice(['3.0'])
+	width = random.choice(["1080"])
+	height = random.choice(["2196"])
 	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/Orca-Android;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBBV/396116327;FBCR/null;FBMF/TECNO;FBBD/lge;FBPN/com.facebook.orca;FBDV/TECNO KI5k;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	return ua
 
@@ -78,16 +78,16 @@ def baby():
 	BUILD = random.choice(["R16NW.", "TP2A.", "SP1A.", "SP1A.", "TP1A.", "TP1A.", "SP1A.", "TP1A.", "RKQ1.", "TP1A.", "TP1A.", "RP1A.", "RP1A.", "RKQ1.", "TQ3A.", "TD2A.", "TD4A.", "TQ3A.", "TP1A.", "TP1A.", "SP2A.", "SD2A.", "SQ3A.", "RD2A.", "RQ3A.", "RP1A.", "QD4A.", "QQ3A.", "QP1A.", "PQ3B.", "PD2A.", "PPR2.", "PPR1.", "OPM8.", "OPR6."])
 	BUILD_VERSION = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
 	FBBV = str(random.randint(159507260, 66666666))
-	DENSITY = random.choice(['4.0', '1.5', '2.0', '2.5', '3.0'])
-	WIDTH = random.choice(["1440", "1080", "1280"])
-	HEIGHT = random.choice(["2768", "1080", "1280", "1440", "1920"])
+	DENSITY = random.choice(['1.75', '1.5', '2.0'])
+	WIDTH = random.choice(["720", "480", "720"])
+	HEIGHT = random.choice(["1488", "854", "1444", "1440", "1920"])
 	FB_VERSION = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	FBLC = random.choice(["cs_CZ","en_GB","en_US","lt_LT","pl_PL","id_ID","ru_RU","pt_PT","he_IL","hi_IN","nl_NL"," it_IT","en_IN","es_ES","en_PK"])
 	FBRV = str(random.randint(000000000,999999999))
 	FBCR = random.choice(["Tele2You","Telenor","FASTWEB","Banglalink","Sprint","Jazz","Vodafone IN","Vi India","Tele2 LT","Jio 4G","EE","Oi","MtelBG","AT&amp-T","Ufone","Azercell"])
 	FBMF = 'Walton'
 	FBBD = random.choice(['Walton'])
-	FBPN = random.choice(["com.facebook.orca"])
+	FBPN = random.choice(["com.facebook.mlite"])
 	FBOP = random.choice(["19"])
 	FBCA = random.choice(["armeabi-v7a:armeabi;"])
 	END = f"[FBAN/FB4A;FBAV/{FB_VERSION}/FBBV/{FBBV};FBDM/{{density={DENSITY},width={WIDTH},height={HEIGHT}}};FBLC/{FBLC};FBRV/{FBRV};FBCR/{FBCR};FBMF/{FBMF};FBBD/{FBBD};FBPN/{FBPN};FBDV/{MOBILE_MODEL};FBSV/{MOBILE_VERSION};FBOP/{FBOP};FBCA/{FBCA}]"
@@ -102,7 +102,7 @@ logo = f"""
     ██         ██    ██   ██ ██      ██   ██ 
      ██████    ██    ██████  ███████ ██   ██                                                                                  
 {A}─────────────────────────────────────────────────
-{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.3\n{A}─────────────────────────────────────────────────"""
+{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.4\n{A}─────────────────────────────────────────────────"""
 #________________ KEY ______________#
 os.system('clear');print(logo)
 attemps = 0
