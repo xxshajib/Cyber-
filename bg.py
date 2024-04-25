@@ -43,10 +43,10 @@ def fex():
 	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	fbbv = str(random.randint(10000000, 66666666))
 	fbrv = str(random.randint(000000000,999999999))
-	density = random.choice(['4.0'])
-	width = random.choice(["1440"])
-	height = random.choice(["2368"])
-	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBRV/{str(fbrv)};FBCR/Grameenphone;FBMF/elephone;FBBD/elephone;FBPN/com.facebook.orca;FBDV/Vowney;FBSV/5.1;FBCA/armeabi-v7a:armeabi;]"
+	density = random.choice(['2.625'])
+	width = random.choice(["1080"])
+	height = random.choice(["2322"])
+	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/zh_TW_#Hant;FBRV/{str(fbrv)};FBCR/arm64-v8a;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_I005DC;FBSV/5.1;FBCA/arm64-v8a:armeabi;]"
 	return ua
 
 def sex():
@@ -74,19 +74,19 @@ def sex():
 	
 def baby():
 	MOBILE_VERSION = f"{random.randint(4, 12)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
-	MOBILE_MODEL = random.choice(["vivo V3Max"])
-	BUILD = random.choice(["LMY47V."])
+	MOBILE_MODEL = random.choice(["moto e"])
+	BUILD = random.choice(["QPGS30.82-135-16."])
 	BUILD_VERSION = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
 	FBBV = str(random.randint(10000000, 66666666))
-	DENSITY = random.choice(['3.0'])
-	WIDTH = random.choice(["1080"])
-	HEIGHT = random.choice(["1920"])
+	DENSITY = random.choice(['1.75'])
+	WIDTH = random.choice(["720"])
+	HEIGHT = random.choice(["1422"])
 	FB_VERSION = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	FBLC = random.choice(["cs_CZ","en_GB","en_US","lt_LT","pl_PL","id_ID","ru_RU","pt_PT","he_IL","hi_IN","nl_NL"," it_IT","en_IN","es_ES","en_PK"])
 	FBRV = str(random.randint(000000000,999999999))
 	FBCR = random.choice(["Tele2You","Telenor","FASTWEB","Banglalink","Sprint","Jazz","Vodafone IN","Vi India","Tele2 LT","Jio 4G","EE","Oi","MtelBG","AT&amp-T","Ufone","Azercell"])
-	FBMF = 'vivo'
-	FBBD = random.choice(['vivo'])
+	FBMF = 'motorola'
+	FBBD = random.choice(['motorola'])
 	FBPN = random.choice(["com.facebook.orca"])
 	FBOP = random.choice(["1"])
 	FBCA = random.choice(["armeabi-v7a:armeabi;"])
