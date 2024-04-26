@@ -49,27 +49,26 @@ def fex():
 	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/zh_TW_#Hant;FBRV/{str(fbrv)};FBCR/&amp;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_I005DC;FBSV/11;FBOP/1;FBCA/arm64-v8a:Grameenphone;]"
 	return ua
 
-def baby():
-	MOBILE_VERSION = f"{random.randint(4, 12)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
-	MOBILE_MODEL = random.choice(["SM-T835","Moto","ASUS_I005DC"])
-	BUILD = random.choice(["QP1A.190711.020", "QP1A.244982.977", "RKQ1.210303.002"])
-	BUILD_VERSION = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
-	FBBV = str(random.randint(10000000, 66666666))
-	DENSITY = random.choice(['2.25', '2.75', '2.625'])
-	WIDTH = random.choice(["1600", "1080", "1080"])
-	HEIGHT = random.choice(["2452", "2130", "2322"])
-	FB_VERSION = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
-	FBLC = random.choice(["cs_CZ","en_GB","en_US","lt_LT","pl_PL","id_ID","ru_RU","pt_PT","he_IL","hi_IN","nl_NL"," it_IT","en_IN","es_ES","en_PK"])
-	FBRV = str(random.randint(000000000,999999999))
-	FBCR = random.choice(["Tele2You","Telenor","FASTWEB","Banglalink","Sprint","Jazz","Vodafone IN","Vi India","Tele2 LT","Jio 4G","EE","Oi","MtelBG","AT&amp-T","Ufone","Azercell"])
-	FBMF = 'samsung','Xiaomi','asus'
-	FBBD = random.choice(['samsung','xiaomi','asus'])
-	FBPN = random.choice(["com.facebook.orca","com.facebook.katana"])
-	FBOP = random.choice(["19"])
-	FBCA = random.choice(["armeabi-v7a:armeabi;","arm64-v8a:armeabi;"])
-	END = f"[FBAN/FB4A;FBAV/{FB_VERSION}/FBBV/{FBBV};FBDM/{{density={DENSITY},width={WIDTH},height={HEIGHT}}};FBLC/{FBLC};FBRV/{FBRV};FBCR/{FBCR};FBMF/{FBMF};FBBD/{FBBD};FBPN/{FBPN};FBDV/{MOBILE_MODEL};FBSV/{MOBILE_VERSION};FBOP/{FBOP};FBCA/{FBCA}]"
-	OMG = f"Dalvik/2.1.0 Linux; U; Android {MOBILE_VERSION}; {MOBILE_MODEL} Build/QP1A.{BUILD_VERSION})"+END
-	return OMG 
+def sex():
+	fban = random.choice(["FB4A"])
+	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
+	fbbv = str(random.randint(10000000, 66666666))
+	density = random.choice(['3.0','2.0'])
+	width = random.choice(["1920","720"])
+	height = random.choice(["1080","1344"])
+	fbcr = random.choice(['Nepal_Telecom', 'Banglalink', 'Robi', 'Grameenphone', 'Airtel','Metro by T-Mobile'])
+	fblc = random.choice(["en_US", "en_GB"])
+	fbbd = 'samsung','motorola'
+	fbpn = random.choice(["com.facebook.adsmanager", "com.facebook.lite", "com.facebook.orca", "com.facebook.katana", "com.facebook.mlite"])
+	fbsv = f"{random.randint(4, 13)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
+	fbmf = 'samsung','motorola'
+	build = random.choice(['SKQ1.210216.001','RKQ1.211103.002','PCB29.73-65-3'])
+	fbdv = random.choice(["GT-I9505","moto e6"])
+	END = f"[FBAN/{str(fban)};FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/{str(fblc)};FBCR/{str(fbcr)};FBMF/{str(fbmf)};FBBD/{str(fbbd)};FBPN/{str(fbpn)};FBDV/{str(fbdv)};FBSV/{str(fbsv)};FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+	ua = f'Davik/2.1.0 (Linux; U; Android {str(fbsv)}; {str(fbdv)} Build/'+str(build)+') '+END
+	ua =f'Mozilla/5.0 (Linux; Android {str(fbsv)}; {str(fbdv)} Build/'+str(build)+') '+END
+	ua=f'Mozilla/3.0 (Linux; Android {str(fbsv)}; {str(fbdv)} Build/'+str(build)+') '+END
+	return ua 
 	
 	
 	
