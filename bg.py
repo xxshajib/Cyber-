@@ -75,25 +75,26 @@ def baby():
 	
 def baby():
 	MOBILE_VERSION = f"{random.randint(4, 12)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
-	MOBILE_MODEL = random.choice(["SM-T835","Moto"])
-	BUILD = random.choice(["QP1A.190711.020", "QP1A.244982.977"])
+	MOBILE_MODEL = random.choice(["SM-T835","Moto","ASUS_I005DC"])
+	BUILD = random.choice(["QP1A.190711.020", "QP1A.244982.977", "RKQ1.210303.002"])
 	BUILD_VERSION = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
 	FBBV = str(random.randint(10000000, 66666666))
-	DENSITY = random.choice(['2.25', "2.75"])
-	WIDTH = random.choice(["1600", "1080"])
-	HEIGHT = random.choice(["2452", "2130"])
+	DENSITY = random.choice(['2.25', '2.75', '2.625'])
+	WIDTH = random.choice(["1600", "1080", "1080"])
+	HEIGHT = random.choice(["2452", "2130", "2322"])
 	FB_VERSION = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	FBLC = random.choice(["cs_CZ","en_GB","en_US","lt_LT","pl_PL","id_ID","ru_RU","pt_PT","he_IL","hi_IN","nl_NL"," it_IT","en_IN","es_ES","en_PK"])
 	FBRV = str(random.randint(000000000,999999999))
 	FBCR = random.choice(["Tele2You","Telenor","FASTWEB","Banglalink","Sprint","Jazz","Vodafone IN","Vi India","Tele2 LT","Jio 4G","EE","Oi","MtelBG","AT&amp-T","Ufone","Azercell"])
-	FBMF = 'samsung','Xiaomi'
-	FBBD = random.choice(['samsung','xiaomi'])
-	FBPN = random.choice(["com.facebook.orca"])
+	FBMF = 'samsung','Xiaomi','asus'
+	FBBD = random.choice(['samsung','xiaomi','asus'])
+	FBPN = random.choice(["com.facebook.orca","com.facebook.katana"])
 	FBOP = random.choice(["19"])
 	FBCA = random.choice(["armeabi-v7a:armeabi;","arm64-v8a:armeabi;"])
 	END = f"[FBAN/FB4A;FBAV/{FB_VERSION}/FBBV/{FBBV};FBDM/{{density={DENSITY},width={WIDTH},height={HEIGHT}}};FBLC/{FBLC};FBRV/{FBRV};FBCR/{FBCR};FBMF/{FBMF};FBBD/{FBBD};FBPN/{FBPN};FBDV/{MOBILE_MODEL};FBSV/{MOBILE_VERSION};FBOP/{FBOP};FBCA/{FBCA}]"
 	OMG = f"Dalvik/2.1.0 Linux; U; Android {MOBILE_VERSION}; {MOBILE_MODEL} Build/QP1A.{BUILD_VERSION})"+END
 	return OMG 
+	
 #──────────────{ LOGO }──────────────#
 logo = f"""
 {A} 
